@@ -1,4 +1,4 @@
-package HomeWork4;
+package HomeWork4Task1;
 
 import java.util.Arrays;
 import java.util.Calendar;
@@ -20,22 +20,25 @@ public class Book {
     public void setBookName(String bookName) {
         if (bookName.isEmpty()) {
             throw new IllegalArgumentException("Please enter a book name");
+        } else {
+            this.bookName = bookName;
         }
-        this.bookName = bookName;
     }
 
     public void setPageCount(int pageCount) {
         if (pageCount <= 0) {
             throw new IllegalArgumentException("Count of pages cannot be 0 or less");
+        } else {
+            this.pageCount = pageCount;
         }
-        this.pageCount = pageCount;
     }
 
     public void setPublicationYear(int publicationYear) {
         if (publicationYear > currentYear) {
             throw new IllegalArgumentException("Year is too young");
+        } else {
+            this.publicationYear = publicationYear;
         }
-        this.publicationYear = publicationYear;
     }
 
     public void setAuthors(Author[] authors) {

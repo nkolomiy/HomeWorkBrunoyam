@@ -1,4 +1,4 @@
-package HomeWork4;
+package HomeWork4Task1;
 
 public class Author {
     private String name;
@@ -12,15 +12,17 @@ public class Author {
     public void setName(String name) {
         if (name.isEmpty() || name.length() < 3) {
             throw new IllegalArgumentException("Please enter an author name");
+        } else {
+            this.name = name;
         }
-        this.name = name;
     }
 
     public void setSurname(String surname) {
         if (surname.isEmpty()) {
             throw new IllegalArgumentException("Please enter an author surname");
+        } else {
+            this.surname = surname;
         }
-        this.surname = surname;
     }
     @Override
     public String toString() {
