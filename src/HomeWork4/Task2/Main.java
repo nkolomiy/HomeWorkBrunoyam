@@ -1,4 +1,4 @@
-package HomeWork4.HomeWork4Task1.HomeWork4Task2;
+package HomeWork4.Task2;
 
 public class Main {
     public static void main(String[] args) {
